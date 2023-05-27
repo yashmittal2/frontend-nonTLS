@@ -2,10 +2,9 @@
 .header{
     text-align:center;
     font-family: 'Roboto Slab', serif;
-    margin-top: 10px;
-    font-size: 80px;
-    font-weight: 900;
+    font-size: 70px;
+    font-weight: 800;
     color: rgba(157, 14, 14, 0.8);
-   /* -webkit-text-stroke: 1px rgb(44, 17, 17);*/
+   padding: 0px;
     text-shadow: 2px 2px black;
 }
