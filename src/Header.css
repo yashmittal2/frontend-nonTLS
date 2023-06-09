@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Roboto+Slab:wght@300;900&family=Rowdies:wght@700&display=swap');
-.header{
-    text-align:center;
-    font-family: 'Roboto Slab', serif;
-    font-size: 70px;
-    font-weight: 800;
-    color: rgba(157, 14, 14, 0.8);
-   padding: 0px;
-    text-shadow: 2px 2px black;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&family=Roboto+Slab:wght@300;900&family=Rowdies:wght@700&display=swap");
+.header {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 70px;
+  font-weight: 800;
+  color: rgba(201, 41, 41, 0.8);
+  padding: 0px;
+  text-shadow: 2px 2px black;
 }

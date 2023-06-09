@@ -1,15 +1,21 @@
-import './App.css';
-import Form from './Form';
-import Header from './Header';
- 
+import Form from "./Form";
+import Header from "./Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import DataPage from "./DataPage";
 
-function App() {
-  return (<><Header /><div className='main'>
-    <div className='sub-main'>
-      <Form />
-    </div>
-  </div></>
+const App = () => {
+  return (
+    <>
+      <Header />
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<Form />} />
+          <Route path="/data" element={<DataPage />} />
+        </Routes>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;

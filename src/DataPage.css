@@ -1,0 +1,21 @@
+/* DataPage.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(241, 147, 147, 0.8);
+}
+
+.header-cell {
+  font-weight: bold;
+  background-color: rgb(240, 12, 12);
+  color: rgb(19, 12, 12);
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.table-cell {
+  border: 1px solid black;
+  text-align: center;
+}
