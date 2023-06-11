@@ -11,16 +11,13 @@ export const fetchData = (formData) => {
   return async (dispatch) => {
     try {
       // Send a POST request to the backend
-      const response = await fetch(
-        "https://react-covid.onrender.com/api/search",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("https://react-covid.onrender.com/search", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
       const data = await response.json();
 
       // Dispatch the setData action to update the data in Redux store
@@ -35,7 +32,7 @@ export const fetchAllData = () => {
   return async (dispatch) => {
     try {
       // Send a GET request to fetch all data from the backend
-      const response = await fetch("https://react-covid.onrender.com/api/data");
+      const response = await fetch("https://react-covid.onrender.com/data");
       const data = await response.json();
 
       // Dispatch the setData action to update the data in Redux store
