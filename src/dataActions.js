@@ -11,7 +11,7 @@ export const fetchData = (formData) => {
   return async (dispatch) => {
     try {
       // Send a POST request to the backend
-      const response = await fetch("https://react-covid.onrender.com", {
+      const response = await fetch("http://localhost:8080/search", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const fetchAllData = () => {
   return async (dispatch) => {
     try {
       // Send a GET request to fetch all data from the backend
-      const response = await fetch("https://react-covid.onrender.com");
+      const response = await fetch("http://localhost:8080/data");
       const data = await response.json();
 
       // Dispatch the setData action to update the data in Redux store
