@@ -12,6 +12,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Form />} />
           <Route path="/data" element={<DataPage />} />
+          <Route path="/search" element={<DataPage />} />
         </Routes>
       </Router>
     </>

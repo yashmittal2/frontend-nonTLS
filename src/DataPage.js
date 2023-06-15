@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import { useSelector } from "react-redux";
+
 import "./DataPage.css";
 import { Table, Column } from "react-virtualized";
 import "react-virtualized/styles.css";
@@ -9,16 +10,13 @@ const DataPage = () => {
   const [renderTime, setRenderTime] = useState(0);
   const [tableData, setTableData] = useState([]);
 
-  useEffect(() => {
-    const startTime = performance.now();
+  console.log(data);
 
-    // This setTimeout is used to simulate a delay in rendering the component
-    setTimeout(() => {
-      const endTime = performance.now();
-      const time = endTime - startTime;
-      setRenderTime(time.toFixed(2));
-    }, 0);
-    setTableData(data);
+  useEffect(() => {
+    if (data && data.result) {
+      setRenderTime(data.duration);
+      setTableData(data.result);
+    }
   }, [data]);
 
   return (

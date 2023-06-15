@@ -24,7 +24,7 @@ const Form = () => {
       dispatch(fetchData(formData));
 
       // Navigate to the data page
-      navigate("/data");
+      navigate("/search");
     } catch (error) {
       console.error(error);
     }
