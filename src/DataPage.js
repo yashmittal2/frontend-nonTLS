@@ -37,7 +37,11 @@ const DataPage = () => {
       <p style={{ marginLeft: 100, marginTop: 10 }}>
         Total Entries:{tableData.length}
       </p>
-      <p style={{ marginLeft: 100 }}>Rendering Time: {renderTime} ms</p>
+      <p style={{ marginLeft: 100 }}>
+        {data && data.result
+          ? `Rendering Time: ${renderTime} ms`
+          : "Loading..."}
+      </p>
       <Table
         className="container"
         headerHeight={40}
